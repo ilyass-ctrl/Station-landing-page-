@@ -3,34 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Affordable Cabinets & Granite | $29.95/sq ft Granite & Quartz | New Hope, MN</title>
-  <meta name="description" content="Granite & quartz countertops from $29.95/sq ft. Cabinets, in-house fabrication, delivery & installation. New Hope, MN. Call 612-386-7172." />
-
+  <title>Rubber Roof Liquidators | EPDM + TPO Rolls | New Hope, MN</title>
+  <meta name="description" content="Rubber Roof Liquidators in New Hope, MN. EPDM & TPO roofing rolls, adhesives, installs, repairs, and delivery. Call/Text 612-386-7172. Mon–Sat 10–6." />
   <meta name="theme-color" content="#0b1220" />
   <link rel="icon" href="favicon.png" type="image/png" />
 
   <!-- Social preview -->
-  <meta property="og:title" content="Affordable Cabinets & Granite | $29.95/sq ft Countertops" />
-  <meta property="og:description" content="Cabinets + granite & quartz countertops with in-house fabrication, delivery and installation in New Hope, MN." />
+  <meta property="og:title" content="Rubber Roof Liquidators | EPDM + TPO Rolls" />
+  <meta property="og:description" content="Today’s best deals on EPDM & TPO roofing rolls + installs/repairs + delivery. New Hope, MN. Call/Text 612-386-7172." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/images/logo.png" />
+  <meta property="og:image" content="assets/images/og.jpg" />
 
-  <!-- Optional: Google Ads / Analytics (paste your gtag snippet below) -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-XXXXXXXXX');
-  </script>
-  -->
-
+  <!-- LocalBusiness schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"HomeAndConstructionBusiness",
-    "name":"Affordable Cabinets & Granite",
+    "name":"Rubber Roof Liquidators",
     "telephone":"+1-612-386-7172",
     "address":{
       "@type":"PostalAddress",
@@ -40,8 +29,9 @@
       "postalCode":"55428",
       "addressCountry":"US"
     },
-    "areaServed":"New Hope, MN and surrounding 30–60 mile area",
-    "description":"Cabinets + granite & quartz countertops with in-house fabrication, delivery and installation."
+    "openingHours":["Mo-Sa 10:00-18:00"],
+    "areaServed":"Twin Cities Metro",
+    "description":"EPDM & TPO roofing rolls, adhesives, and flat roof installs/repairs with delivery available. Call/text to confirm stock and today’s pricing."
   }
   </script>
 
@@ -49,7 +39,7 @@
     :root{
       --bg0:#060914;
       --bg1:#0b1220;
-      --card: rgba(255,255,255,.06);
+      --card: rgba(255,255,255,.055);
       --line: rgba(255,255,255,.12);
       --text:#eef3ff;
       --muted:#b7c3e6;
@@ -58,7 +48,6 @@
       --mint:#2dd4bf;
       --blue:#60a5fa;
 
-      --r14:14px;
       --r18:18px;
       --r24:24px;
 
@@ -67,7 +56,6 @@
 
       --max: 1120px;
     }
-
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
@@ -90,64 +78,70 @@
       .fade{transition:opacity .55s ease, transform .55s ease}
     }
 
-    /* Header */
+    /* Top info bar */
+    .topbar{
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background: rgba(6,9,20,.62);
+      backdrop-filter: blur(10px) saturate(150%);
+    }
+    .topbar .inner{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      padding:10px 0;
+      color: rgba(238,243,255,.90);
+      font-weight:900;
+      flex-wrap:wrap;
+    }
+    .top-left, .top-right{
+      display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+    }
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:7px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: rgba(238,243,255,.88);
+      font-size:12.5px;
+      white-space:nowrap;
+    }
+    .dot{width:10px;height:10px;border-radius:999px;background: radial-gradient(circle at 30% 30%, var(--mint), var(--blue))}
+    .sep{opacity:.55}
+
     header{
       position:sticky; top:0; z-index:50;
-      border-bottom:1px solid var(--line);
+      border-bottom:1px solid rgba(255,255,255,.12);
       background: rgba(6,9,20,.72);
       backdrop-filter: blur(12px) saturate(150%);
     }
-    .h{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:12px; padding:12px 0;
-    }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      text-decoration:none;
-    }
-    .brand img{
-      height:38px; width:auto;
-      border-radius:12px;
-      padding:6px 8px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
+    .h{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 0}
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none}
+    .brandMark{
+      height:40px; width:40px; border-radius:14px;
+      display:grid; place-items:center;
+      background: linear-gradient(135deg, rgba(45,212,191,.22), rgba(96,165,250,.14));
+      border:1px solid rgba(255,255,255,.14);
       box-shadow: 0 12px 30px rgba(0,0,0,.25);
+      font-weight:1100;
+      letter-spacing:-.6px;
     }
-    .brand .t{
-      display:grid; line-height:1.05;
-    }
-    .brand strong{
-      font-weight:1000;
-      letter-spacing:-.2px;
-      font-size:14.5px;
-    }
-    .brand span{
-      font-weight:850;
-      font-size:12px;
-      color: rgba(183,195,230,.86);
-      letter-spacing:.2px;
-    }
+    .brandText{display:grid; line-height:1.05}
+    .brandText strong{font-size:14px; letter-spacing:-.2px}
+    .brandText span{font-size:12px; color:rgba(183,195,230,.9); font-weight:850}
+
     nav{display:flex; gap:8px; align-items:center; color:var(--muted); font-weight:900}
-    nav a{
-      text-decoration:none;
-      padding:9px 10px;
-      border-radius:12px;
-      transition: background .2s ease, color .2s ease;
-    }
+    nav a{ text-decoration:none; padding:9px 10px; border-radius:12px; transition: background .2s ease, color .2s ease;}
     nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
 
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
-      padding:11px 14px;
-      border-radius:14px;
+      padding:11px 14px; border-radius:14px;
       border:1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.06);
       color:var(--text);
-      font-weight:950;
-      text-decoration:none;
+      font-weight:950; text-decoration:none;
       box-shadow: var(--shadow2);
       transition: transform .2s ease, background .2s ease;
       white-space:nowrap;
+      cursor:pointer;
     }
     .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.085)}
     .btn.primary{
@@ -163,72 +157,18 @@
     /* Hero */
     .hero{padding:22px 0 10px}
     .heroShell{
-      border:1px solid var(--line);
+      border:1px solid rgba(255,255,255,.12);
       border-radius: var(--r24);
       overflow:hidden;
       box-shadow: var(--shadow);
       background: rgba(255,255,255,.04);
-      position:relative;
     }
     .heroGrid{
       display:grid;
-      grid-template-columns: 1.05fr .95fr;
+      grid-template-columns: 1.08fr .92fr;
       gap:16px;
       padding:18px;
-      position:relative;
-      z-index:2;
     }
-    .heroMedia{
-      border-radius: var(--r24);
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      box-shadow: var(--shadow2);
-      position:relative;
-      min-height: 360px;
-    }
-    .heroMedia img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      filter: saturate(1.05) contrast(1.03);
-      transform: scale(1.02);
-    }
-    .heroMedia:after{
-      content:"";
-      position:absolute; inset:0;
-      background: linear-gradient(180deg, rgba(6,9,20,.06), rgba(6,9,20,.55));
-      pointer-events:none;
-    }
-    .thumbs{
-      position:absolute; left:14px; right:14px; bottom:14px;
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:10px;
-      z-index:3;
-    }
-    .thumb{
-      border-radius: 16px;
-      border:1px solid rgba(255,255,255,.16);
-      overflow:hidden;
-      background: rgba(6,9,20,.45);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 12px 26px rgba(0,0,0,.35);
-      cursor:pointer;
-    }
-    .thumb img{width:100%; height:88px; object-fit:cover; display:block}
-
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      color: rgba(238,243,255,.88);
-      font-weight:900;
-      width:fit-content;
-    }
-    .dot{width:10px;height:10px;border-radius:999px;background: radial-gradient(circle at 30% 30%, var(--mint), var(--blue))}
     h1{
       margin:12px 0 10px;
       font-size: clamp(34px, 3.7vw, 54px);
@@ -240,7 +180,17 @@
       color: rgba(238,243,255,.86);
       font-size:16.5px;
       line-height:1.65;
-      max-width: 68ch;
+      max-width: 72ch;
+      font-weight:800;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: rgba(238,243,255,.88);
+      font-weight:950;
+      width:fit-content;
     }
     .bullets{
       margin:14px 0 0;
@@ -251,10 +201,7 @@
       color: rgba(238,243,255,.92);
       font-weight:900;
     }
-    .bullets li{
-      display:flex; gap:10px; align-items:flex-start;
-      line-height:1.45;
-    }
+    .bullets li{display:flex; gap:10px; align-items:flex-start; line-height:1.45;}
     .check{
       width:18px;height:18px;border-radius:7px;
       background: rgba(45,212,191,.14);
@@ -271,7 +218,36 @@
       line-height:1.45;
     }
 
-    /* Trust strip */
+    .heroMedia{
+      border-radius: var(--r24);
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      box-shadow: var(--shadow2);
+      min-height: 360px;
+    }
+    .heroMedia .img{
+      width:100%; height:100%;
+      background:
+        radial-gradient(900px 520px at 20% 15%, rgba(45,212,191,.18), transparent 60%),
+        radial-gradient(900px 520px at 80% 10%, rgba(96,165,250,.18), transparent 60%),
+        linear-gradient(145deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      display:flex; align-items:flex-end; justify-content:flex-start;
+      padding:16px;
+    }
+    .heroMedia .tag{
+      border-radius: 16px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(6,9,20,.55);
+      backdrop-filter: blur(10px);
+      padding:12px 12px;
+      font-weight:950;
+      color: rgba(238,243,255,.92);
+      max-width: 46ch;
+      box-shadow: 0 12px 26px rgba(0,0,0,.35);
+    }
+    .heroMedia .tag small{display:block; color:rgba(183,195,230,.9); font-weight:850; margin-top:6px; line-height:1.45}
+
     .strip{
       margin-top:14px;
       border-top:1px solid rgba(255,255,255,.10);
@@ -293,65 +269,121 @@
       text-align:center;
       color: rgba(238,243,255,.88);
       font-size: 12.5px;
+      line-height:1.2;
     }
 
-    section{padding: 20px 0}
+    section{padding: 22px 0}
     .title{margin:0 0 8px; font-size: 28px; letter-spacing:-.6px}
-    .lead{margin:0 0 14px; color:var(--muted); line-height:1.65; font-weight:750; max-width: 82ch}
+    .lead{margin:0 0 14px; color:var(--muted); line-height:1.65; font-weight:780; max-width: 90ch}
 
     .grid{display:grid; gap:14px}
     .grid3{grid-template-columns: repeat(3, 1fr)}
+
     .card{
       border-radius: var(--r24);
       border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.05);
+      background: var(--card);
       box-shadow: var(--shadow2);
       padding:16px;
     }
     .card h3{margin:0 0 6px; font-size: 16px}
     .card p{margin:0; color:var(--muted); line-height:1.6; font-weight:750}
 
+    /* Deals */
+    .dealsHeader{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;
+      margin-bottom:10px;
+    }
+    .kicker{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      font-weight:950;
+      color: rgba(238,243,255,.90);
+      width:fit-content;
+      font-size:12.5px;
+    }
+    .priceRow{
+      display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
+      margin-top:10px;
+    }
+    .was{
+      color: rgba(183,195,230,.82);
+      text-decoration: line-through;
+      font-weight:850;
+    }
+    .now{
+      font-weight:1100;
+      color: rgba(45,212,191,.95);
+      font-size:18px;
+      letter-spacing:-.2px;
+    }
+    .unit{
+      color: rgba(183,195,230,.88);
+      font-weight:850;
+      font-size:12.5px;
+    }
+    .sku{
+      margin-top:10px;
+      color: rgba(183,195,230,.86);
+      font-weight:850;
+      font-size:12.5px;
+      line-height:1.45;
+    }
+    .dealCard{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.045));
+      position:relative;
+      overflow:hidden;
+    }
+    .dealCard:before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background: radial-gradient(700px 360px at 18% 0%, rgba(45,212,191,.16), transparent 55%),
+                  radial-gradient(700px 360px at 82% 0%, rgba(96,165,250,.14), transparent 55%);
+      opacity:.9;
+      pointer-events:none;
+    }
+    .dealCard > *{position:relative; z-index:1}
+
+    .bestFor{
+      margin:10px 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:8px;
+      color: rgba(238,243,255,.90);
+      font-weight:850;
+      line-height:1.45;
+    }
+    .bestFor li{display:flex; gap:10px; align-items:flex-start}
+
     /* Gallery */
     .gallery{
       display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap:12px;
+      grid-template-columns: repeat(5, 1fr);
+      gap:10px;
     }
-    .shot{
-      border-radius: var(--r24);
-      border:1px solid rgba(255,255,255,.10);
+    .gItem{
+      border-radius: 18px;
       overflow:hidden;
+      border:1px solid rgba(255,255,255,.12);
       background: rgba(255,255,255,.04);
       box-shadow: var(--shadow2);
-      position:relative;
-      cursor:pointer;
+      aspect-ratio: 4 / 3;
     }
-    .shot img{width:100%; height:100%; object-fit:cover}
-    .shot.big{grid-column: span 7; min-height: 360px}
-    .shot.med{grid-column: span 5; min-height: 360px}
-    .shot.sm{grid-column: span 4; min-height: 240px}
-    .cap{
-      position:absolute; left:12px; bottom:12px;
-      padding:8px 10px;
-      border-radius: 14px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(6,9,20,.55);
-      backdrop-filter: blur(10px);
-      font-weight:950;
-      font-size: 12px;
-      color: rgba(238,243,255,.92);
-      max-width: calc(100% - 24px);
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
+    .gItem img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transform: scale(1.01);
+      transition: transform .35s ease;
     }
+    .gItem:hover img{transform: scale(1.05)}
 
-    /* Reviews */
-    .review{display:grid; gap:10px}
-    .stars{color:#fbbf24; letter-spacing: 1.2px; font-weight:1000}
-    .who{color:var(--muted2); font-weight:900}
-
-    /* Quote */
+    /* Form */
     .quote{display:grid; grid-template-columns: 1.05fr .95fr; gap:14px; align-items:start;}
     .field{display:grid; gap:6px}
     label{font-weight:900; font-size: 13px; color:var(--muted)}
@@ -370,7 +402,8 @@
     .formActions{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:10px}
     .fine{margin:10px 0 0; color: rgba(183,195,230,.78); font-size:12px; line-height:1.45; font-weight:700}
 
-    /* FAQ */
+    .hidden{display:none !important}
+
     details{
       border:1px solid rgba(255,255,255,.12);
       background: rgba(255,255,255,.05);
@@ -378,60 +411,21 @@
       padding: 12px 14px;
       box-shadow: var(--shadow2);
     }
-    summary{
-      cursor:pointer;
-      font-weight:950;
-      color: rgba(238,243,255,.92);
-    }
+    summary{cursor:pointer; font-weight:950; color: rgba(238,243,255,.92);}
     details p{margin:8px 0 0; color: var(--muted); line-height:1.65; font-weight:750}
-
-    /* Lightbox */
-    .lb{
-      position:fixed; inset:0; z-index:100;
-      background: rgba(0,0,0,.72);
-      display:none;
-      align-items:center;
-      justify-content:center;
-      padding: 18px;
-    }
-    .lb.in{display:flex}
-    .lbCard{
-      max-width: 1100px;
-      width:100%;
-      border-radius: var(--r24);
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(6,9,20,.55);
-      backdrop-filter: blur(12px);
-      box-shadow: var(--shadow);
-      overflow:hidden;
-      position:relative;
-    }
-    .lbCard img{width:100%; height:auto; display:block}
-    .lbClose{
-      position:absolute; top:10px; right:10px;
-      border-radius: 999px;
-      padding: 10px 12px;
-      border:1px solid rgba(255,255,255,.16);
-      background: rgba(0,0,0,.35);
-      color: var(--text);
-      font-weight:1000;
-      cursor:pointer;
-    }
 
     /* Mobile */
     .mobilebar{display:none}
+    @media (max-width: 1040px){ .gallery{grid-template-columns: repeat(3, 1fr)} }
     @media (max-width: 980px){
       nav{display:none}
-      .brand .t{display:none}
       .heroGrid{grid-template-columns: 1fr}
-      .heroMedia{min-height: 300px}
+      .heroMedia{min-height: 240px}
       .stripInner{grid-template-columns: 1fr 1fr; gap:10px}
       .grid3{grid-template-columns: 1fr}
       .quote{grid-template-columns: 1fr}
       .row{grid-template-columns: 1fr}
-      .shot.big,.shot.med,.shot.sm{grid-column: span 12; min-height: 240px}
       body{padding-bottom: 76px}
-
       .mobilebar{
         display:grid; grid-template-columns: repeat(3, 1fr);
         position:fixed; left:12px; right:12px; bottom:12px;
@@ -444,11 +438,8 @@
         box-shadow: 0 22px 60px rgba(0,0,0,.55);
       }
       .mobilebar a{
-        padding:14px 10px;
-        text-align:center;
-        text-decoration:none;
-        font-weight:1000;
-        border-right:1px solid rgba(255,255,255,.10);
+        padding:14px 10px; text-align:center; text-decoration:none;
+        font-weight:1000; border-right:1px solid rgba(255,255,255,.10);
       }
       .mobilebar a:last-child{border-right:none}
       .mobilebar a:nth-child(2){color: rgba(45,212,191,.95)}
@@ -458,45 +449,66 @@
 </head>
 
 <body>
+  <!-- Straight-line info -->
+  <div class="topbar">
+    <div class="container">
+      <div class="inner">
+        <div class="top-left">
+          <span class="chip"><span class="dot" aria-hidden="true"></span> New Hope, MN</span>
+          <span class="chip">Mon–Sat <strong>10:00–6:00</strong></span>
+          <span class="chip"><strong>5671 International Pkwy</strong> <span class="sep">•</span> New Hope, MN 55428</span>
+          <span class="chip"><strong>Delivery available</strong> (ask for quote)</span>
+        </div>
+        <div class="top-right">
+          <span class="chip">Call/Text: <strong><a href="tel:+16123867172">612-386-7172</a></strong></span>
+          <span class="chip">Confirm stock & deals before pickup</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header>
     <div class="container">
       <div class="h">
-        <a class="brand" href="#top" aria-label="Affordable Cabinets & Granite">
-          <img src="assets/images/logo.png" alt="Affordable Cabinets & Granite logo" width="240" height="70" loading="eager" decoding="async" />
-          <span class="t">
-            <strong>Affordable Cabinets &amp; Granite</strong>
-            <span>Fabrication • Delivery • Install</span>
-          </span>
+        <a class="brand" href="#top" aria-label="Rubber Roof Liquidators">
+          <div class="brandMark" aria-hidden="true">RL</div>
+          <div class="brandText">
+            <strong>Rubber Roof Liquidators</strong>
+            <span>EPDM + T.P.O • Top Of The Line Rubber • Delivery</span>
+          </div>
         </a>
 
         <nav aria-label="Primary">
-          <a href="#work">Work</a>
-          <a href="#services">Services</a>
-          <a href="#reviews">Reviews</a>
+          <a href="#deals">Today’s Deals</a>
+          <a href="#services">Install & Repair</a>
+          <a href="#delivery">Delivery</a>
+          <a href="#gallery">Photos</a>
+          <a href="#faq">FAQ</a>
           <a href="#quote">Get Quote</a>
         </nav>
 
         <div style="display:flex; gap:10px; align-items:center">
-          <a class="btn primary" href="#quote">Get a Fast Quote</a>
-          <a class="btn call" href="tel:+16123867172">Call 612-386-7172</a>
+          <a class="btn primary" href="#deals">View Pricing</a>
+          <a class="btn call" href="tel:+16123867172">Call/Text 612-386-7172</a>
         </div>
       </div>
     </div>
   </header>
 
   <main id="top">
+    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <div class="heroShell fade">
           <div class="heroGrid">
             <div>
-              <div class="badge"><span class="dot" aria-hidden="true"></span> New Hope, MN • Serving ~30–60 miles</div>
+              <div class="badge"><span class="dot" aria-hidden="true"></span> EPDM + T.P.O Rolls • Supply • Install • Repair • Delivery</div>
 
-              <h1>Cabinets + Granite &amp; Quartz Countertops — <span style="color:var(--mint)">$29.95/sq ft</span></h1>
+              <h1>Top Of The Line Rubber for flat roofs — <span style="color:var(--mint)">priced to move</span></h1>
 
               <p class="sub">
-                A remodel that feels expensive—without the expensive quote. We handle the details in-house:
-                <strong>cut, polish, fabricate, deliver, and install</strong> so your kitchen upgrade stays smooth.
+                We stock <strong>EPDM and T.P.O roofing rolls</strong>, plus essentials like <strong>Firestone glue</strong>.
+                Want it delivered? <strong>We deliver any product</strong>—call/text to confirm stock and get a delivery quote fast.
               </p>
 
               <ul class="bullets" aria-label="Key benefits">
@@ -504,42 +516,45 @@
                   <span class="check" aria-hidden="true">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 7l-9 10-4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   </span>
-                  In-house fabrication for clean seams, edges, and cutouts
+                  Straight pricing — all products and deals listed in one place
                 </li>
                 <li>
                   <span class="check" aria-hidden="true">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 7l-9 10-4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   </span>
-                  One-week installation available on select projects (schedule-dependent)
+                  Built for MN weather: snow, rain, freeze-thaw, wind
                 </li>
                 <li>
                   <span class="check" aria-hidden="true">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 7l-9 10-4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   </span>
-                  Design help + cabinets + countertops from one place
+                  Pickup or <strong>delivery</strong> — installs and repairs available
                 </li>
               </ul>
 
               <div class="heroCta">
-                <a class="btn primary" href="#quote">Get My Quote</a>
-                <a class="btn call" href="tel:+16123867172">Call Now</a>
-                <a class="btn ghost" href="#work">See Work</a>
+                <a class="btn primary" href="#deals">See Today’s Best Deals</a>
+                <a class="btn call" href="tel:+16123867172">Call/Text Now</a>
+                <a class="btn ghost" href="#quote">Request a Quote</a>
               </div>
 
               <p class="micro">
-                Showroom: <strong>5671 International Pkwy, New Hope, MN 55428</strong><br/>
-                Call: <strong><a href="tel:+16123867172">612-386-7172</a></strong>
-                <span style="opacity:.8"> • </span>
-                Countertop pricing varies by material, layout, edges, and cutouts.
+                Pickup: <strong>5671 International Pkwy, New Hope, MN 55428</strong><br/>
+                Hours: <strong>Mon–Sat 10:00–6:00</strong> • Call/Text: <strong><a href="tel:+16123867172">612-386-7172</a></strong>
               </p>
             </div>
 
-            <div class="heroMedia" aria-label="Project photo">
-              <img id="heroImg" src="assets/images/hero.webp" alt="Modern kitchen with new quartz countertop and cabinetry" loading="eager" decoding="async" />
-              <div class="thumbs" aria-label="More photos">
-                <div class="thumb" data-src="assets/images/gallery-1.webp" role="button" tabindex="0" aria-label="View photo 1"><img src="assets/images/gallery-1.webp" alt="Kitchen photo thumbnail 1" loading="lazy"></div>
-                <div class="thumb" data-src="assets/images/gallery-2.webp" role="button" tabindex="0" aria-label="View photo 2"><img src="assets/images/gallery-2.webp" alt="Kitchen photo thumbnail 2" loading="lazy"></div>
-                <div class="thumb" data-src="assets/images/gallery-3.webp" role="button" tabindex="0" aria-label="View photo 3"><img src="assets/images/gallery-3.webp" alt="Kitchen photo thumbnail 3" loading="lazy"></div>
+            <div class="heroMedia" aria-label="Roofing visual">
+              <div class="img">
+                <div class="tag">
+                  <div style="font-weight:1100; font-size:14px; letter-spacing:-.2px;">Fast help, real answers:</div>
+                  <div style="color:rgba(238,243,255,.88); font-weight:850; line-height:1.55; font-size:13px; margin-top:6px;">
+                    Pick the right roll size • reduce seams • match your roof type • get delivery pricing
+                  </div>
+                  <small>
+                    Text your roof size + what it’s on + pickup/delivery. We’ll tell you exactly what to buy.
+                  </small>
+                </div>
               </div>
             </div>
           </div>
@@ -547,10 +562,10 @@
           <div class="strip" aria-label="Trust strip">
             <div class="container">
               <div class="stripInner">
-                <div class="pill">Starting at <strong>$29.95/sq ft</strong></div>
-                <div class="pill"><strong>Cut • Polish • Fabricate</strong> In-house</div>
-                <div class="pill"><strong>Delivery & Install</strong> Available</div>
-                <div class="pill">Call/Text <strong>612-386-7172</strong></div>
+                <div class="pill">Pickup in <strong>New Hope</strong></div>
+                <div class="pill"><strong>EPDM + T.P.O</strong> rolls</div>
+                <div class="pill">Install &amp; Repair options</div>
+                <div class="pill"><strong>Delivery</strong> available</div>
               </div>
             </div>
           </div>
@@ -559,66 +574,189 @@
       </div>
     </section>
 
-    <section id="work">
+    <!-- DEALS / PRODUCTS -->
+    <section id="deals">
       <div class="container">
         <div class="fade">
-          <h2 class="title">Real Kitchens. Real Results.</h2>
-          <p class="lead">
-            These are the photos you provided. Tap any image to enlarge. (Add more of your own finished jobs to increase calls.)
-          </p>
-
-          <div class="gallery">
-            <figure class="shot big" data-src="assets/images/gallery-2.webp">
-              <img src="assets/images/gallery-2.webp" alt="Large modern kitchen with white cabinets and bright island countertop" loading="lazy">
-              <figcaption class="cap">Bright, modern quartz look</figcaption>
-            </figure>
-            <figure class="shot med" data-src="assets/images/gallery-1.webp">
-              <img src="assets/images/gallery-1.webp" alt="White kitchen with granite countertops and stainless appliances" loading="lazy">
-              <figcaption class="cap">Granite + white cabinetry</figcaption>
-            </figure>
-            <figure class="shot sm" data-src="assets/images/gallery-3.webp">
-              <img src="assets/images/gallery-3.webp" alt="Warm wood cabinets with dark countertop and modern appliances" loading="lazy">
-              <figcaption class="cap">Warm cabinets + dark stone</figcaption>
-            </figure>
+          <div class="dealsHeader">
+            <div>
+              <h2 class="title">Today’s Best Deals</h2>
+              <p class="lead">
+                All products and pricing are listed here (no duplicates). Call/text to confirm today’s stock — and ask about <strong>delivery</strong>.
+              </p>
+            </div>
+            <div class="kicker"><span class="dot" aria-hidden="true"></span> Deals change — confirm by phone</div>
           </div>
 
-          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn primary" href="#quote">Get a Fast Quote</a>
-            <a class="btn call" href="tel:+16123867172">Call 612-386-7172</a>
+          <div class="grid grid3">
+            <!-- EPDM 60 mil (all sizes in one card) -->
+            <div class="card dealCard">
+              <h3>Firestone EPDM Rubber Roofing — 60 mil</h3>
+              <p style="margin-top:6px;"><strong>Sizes & pricing:</strong></p>
+
+              <div class="priceRow">
+                <span class="unit">10×100</span>
+                <span class="was">$1,400</span>
+                <span class="now">$795</span>
+                <span class="unit">sale price</span>
+              </div>
+
+              <div class="priceRow">
+                <span class="unit">10×50</span>
+                <span class="now">$450</span>
+                <span class="unit">today</span>
+              </div>
+
+              <div class="priceRow">
+                <span class="unit">10×25</span>
+                <span class="now">$225</span>
+                <span class="unit">today</span>
+              </div>
+
+              <div class="sku" style="margin-top:12px;"><strong>Best for:</strong></div>
+              <ul class="bestFor">
+                <li><span class="check" aria-hidden="true">✓</span> garages, sheds, additions, porches</li>
+                <li><span class="check" aria-hidden="true">✓</span> mobile homes & manufactured housing</li>
+                <li><span class="check" aria-hidden="true">✓</span> office/retail flat roofs, small commercial</li>
+                <li><span class="check" aria-hidden="true">✓</span> containers, shops, utility buildings</li>
+                <li><span class="check" aria-hidden="true">✓</span> repairs where durability matters (edges/seams)</li>
+                <li><span class="check" aria-hidden="true">✓</span> delivery when you need it on-site</li>
+              </ul>
+            </div>
+
+            <!-- Firestone Force -->
+            <div class="card dealCard">
+              <h3>Firestone Force with built in adhesive</h3>
+              <p><strong>Faster install</strong> • built-in adhesive system</p>
+              <div class="priceRow">
+                <span class="was">$1,600</span>
+                <span class="now">$995</span>
+                <span class="unit">sale price</span>
+              </div>
+
+              <div class="sku" style="margin-top:12px;"><strong>Best for:</strong></div>
+              <ul class="bestFor">
+                <li><span class="check" aria-hidden="true">✓</span> jobs where speed matters (fewer steps)</li>
+                <li><span class="check" aria-hidden="true">✓</span> DIY installs that want a cleaner workflow</li>
+                <li><span class="check" aria-hidden="true">✓</span> garages, additions, low-slope roof sections</li>
+                <li><span class="check" aria-hidden="true">✓</span> partial reroofs and repair sections</li>
+                <li><span class="check" aria-hidden="true">✓</span> delivery to job sites and properties</li>
+              </ul>
+            </div>
+
+            <!-- TPO -->
+            <div class="card dealCard">
+              <h3>T.P.O White Rolls</h3>
+              <p><strong>Size:</strong> 10×100</p>
+              <div class="priceRow">
+                <span class="was">$1,100</span>
+                <span class="now">$795</span>
+                <span class="unit">sale price</span>
+              </div>
+
+              <div class="sku" style="margin-top:12px;"><strong>Best for:</strong></div>
+              <ul class="bestFor">
+                <li><span class="check" aria-hidden="true">✓</span> reflective white membrane projects</li>
+                <li><span class="check" aria-hidden="true">✓</span> offices, apartments, multi-unit buildings</li>
+                <li><span class="check" aria-hidden="true">✓</span> modern flat roofs & low-slope areas</li>
+                <li><span class="check" aria-hidden="true">✓</span> partial replacement sections / repairs</li>
+                <li><span class="check" aria-hidden="true">✓</span> delivery for larger properties</li>
+              </ul>
+            </div>
+
+            <!-- Glue -->
+            <div class="card">
+              <h3>Firestone Glue</h3>
+              <p>Bonding adhesive for EPDM-style installs</p>
+              <div class="priceRow">
+                <span class="was">$275</span>
+                <span class="now">$185</span>
+                <span class="unit">sale price</span>
+              </div>
+
+              <div class="sku" style="margin-top:12px;"><strong>Best for:</strong></div>
+              <ul class="bestFor">
+                <li><span class="check" aria-hidden="true">✓</span> bonding EPDM to common roof surfaces</li>
+                <li><span class="check" aria-hidden="true">✓</span> repairs where adhesion matters (patch areas)</li>
+                <li><span class="check" aria-hidden="true">✓</span> edges/details depending on install method</li>
+              </ul>
+            </div>
+
+            <!-- TKO (bottom priority) -->
+            <div class="card">
+              <h3>TKO Architectural Designer Shingles</h3>
+              <p>Bottom priority item (available if you need it)</p>
+              <div class="priceRow">
+                <span class="was">$160</span>
+                <span class="now">$79</span>
+                <span class="unit">per sq ft</span>
+              </div>
+              <div class="sku" style="margin-top:12px;"><strong>Best for:</strong></div>
+              <ul class="bestFor">
+                <li><span class="check" aria-hidden="true">✓</span> residential roof projects (non-flat)</li>
+                <li><span class="check" aria-hidden="true">✓</span> sheds / sloped structures</li>
+              </ul>
+            </div>
+
+            <!-- Delivery CTA -->
+            <div class="card">
+              <h3>Delivery Available</h3>
+              <p style="margin-top:8px;">
+                We deliver <strong>any product</strong>. Get a fast delivery quote by sending your address + what you want.
+              </p>
+              <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                <a class="btn primary" href="#quote">Request delivery quote</a>
+                <a class="btn call" href="sms:+16123867172">Text delivery request</a>
+              </div>
+              <div class="sku">Tip: Include roof size, product, and city/zip for fastest pricing.</div>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- SERVICES -->
     <section id="services">
       <div class="container">
         <div class="fade">
-          <h2 class="title">Everything You Need (Without the Chaos)</h2>
+          <h2 class="title">Supply + Install + Repair</h2>
           <p class="lead">
-            Clean workflow. Clear expectations. Quality finish. This is the easiest way to upgrade a kitchen without juggling multiple vendors.
+            We don’t just sell materials — we help you finish the job correctly. Pickup or <strong>delivery</strong> available.
           </p>
 
           <div class="grid grid3">
             <div class="card">
-              <h3>Granite & Quartz Countertops</h3>
-              <p>Affordable options with a premium look. We can help match your style, cabinets, and budget.</p>
+              <h3>Flat Roof Repairs</h3>
+              <p style="margin-top:8px">Targeted repairs for leaks, seams, edges, penetrations, and worn membrane sections.</p>
+              <ul class="bestFor">
+                <li><span class="check" aria-hidden="true">✓</span> mobile homes & manufactured housing</li>
+                <li><span class="check" aria-hidden="true">✓</span> offices, apartments, commercial units</li>
+                <li><span class="check" aria-hidden="true">✓</span> trailers, motorhomes, RV roofs</li>
+                <li><span class="check" aria-hidden="true">✓</span> containers, shops, garages, sheds</li>
+              </ul>
             </div>
-            <div class="card">
-              <h3>Cabinets + Kitchen Design</h3>
-              <p>Cabinet selection, kitchen layout help, and coordinated countertops so everything fits correctly.</p>
-            </div>
-            <div class="card">
-              <h3>Fabrication + Installation</h3>
-              <p>In-house cut/polish and professional install for clean edges, correct cutouts, and a finished look.</p>
-            </div>
-          </div>
 
-          <div class="grid" style="margin-top:14px">
             <div class="card">
-              <h3 style="margin:0 0 6px;">Also available</h3>
-              <p style="margin:0; color:var(--muted); font-weight:750; line-height:1.65;">
-                Black architectural shingles • EPDM rubber roofing rolls • Remodeling materials (ask when you call).
-              </p>
+              <h3>EPDM Install</h3>
+              <p style="margin-top:8px">Full installs designed to reduce seams and maximize durability.</p>
+              <ul class="bestFor">
+                <li><span class="check" aria-hidden="true">✓</span> garages, additions, porches</li>
+                <li><span class="check" aria-hidden="true">✓</span> mobile homes, trailers, motorhomes</li>
+                <li><span class="check" aria-hidden="true">✓</span> small commercial & office flat roofs</li>
+                <li><span class="check" aria-hidden="true">✓</span> containers & utility buildings</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>T.P.O Install / Repair</h3>
+              <p style="margin-top:8px">Reflective systems for modern flat roofs and repair work.</p>
+              <ul class="bestFor">
+                <li><span class="check" aria-hidden="true">✓</span> office buildings & multi-unit structures</li>
+                <li><span class="check" aria-hidden="true">✓</span> low-slope additions and commercial areas</li>
+                <li><span class="check" aria-hidden="true">✓</span> repair sections & partial replacements</li>
+                <li><span class="check" aria-hidden="true">✓</span> delivery to properties/job sites available</li>
+              </ul>
             </div>
           </div>
 
@@ -626,161 +764,251 @@
       </div>
     </section>
 
-    <section id="reviews">
+    <!-- DELIVERY -->
+    <section id="delivery">
       <div class="container">
         <div class="fade">
-          <h2 class="title">Why Customers Choose Us</h2>
+          <h2 class="title">Delivery Service</h2>
           <p class="lead">
-            Replace these with your real customer reviews (names/cities). This alone can lift conversions significantly.
+            We can deliver <strong>any product</strong> you purchase. This is perfect for job sites, rentals, multi-unit buildings, and anyone who wants a fast drop-off.
           </p>
 
           <div class="grid grid3">
-            <div class="card review">
-              <div class="stars">★★★★★</div>
-              <div style="font-weight:950;">“Great price and the finish looks high-end. Install was clean.”</div>
-              <div class="who">— Customer, New Hope</div>
+            <div class="card">
+              <h3>Fast quote</h3>
+              <p>Text your city/zip + product + size. We’ll reply with delivery options and pricing.</p>
             </div>
-            <div class="card review">
-              <div class="stars">★★★★★</div>
-              <div style="font-weight:950;">“We got cabinets + counters together and it made everything easier.”</div>
-              <div class="who">— Customer, Plymouth</div>
+            <div class="card">
+              <h3>Job-site ready</h3>
+              <p>Deliver to homes, offices, apartments, mobile homes, trailers, and containers.</p>
             </div>
-            <div class="card review">
-              <div class="stars">★★★★★</div>
-              <div style="font-weight:950;">“The quartz looks perfect—smooth process from start to finish.”</div>
-              <div class="who">— Customer, Golden Valley</div>
+            <div class="card">
+              <h3>Pickup still available</h3>
+              <p>Prefer pickup? Come to New Hope Mon–Sat 10–6. Call/text to confirm stock.</p>
             </div>
+          </div>
+
+          <div class="card" style="margin-top:14px;">
+            <h3 style="margin:0 0 6px;">Text this for fastest delivery pricing</h3>
+            <p style="margin:0; color:var(--muted); font-weight:780; line-height:1.65;">
+              “Delivery quote: (product + size), (address or zip), (pickup vs delivery), (timeline).”
+            </p>
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn call" href="sms:+16123867172">Text 612-386-7172</a>
+              <a class="btn primary" href="#quote">Request via form</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container">
+        <div class="fade">
+          <h2 class="title">Photos (upload yours — layout is ready)</h2>
+          <p class="lead">
+            Upload 10 images into <strong>assets/images/</strong> using the names below and they will automatically show here.
+          </p>
+
+          <div class="gallery" aria-label="Product and project photos">
+            <div class="gItem"><img src="assets/images/photo-01.jpg" alt="Roofing photo 01" loading="lazy" /></div>
+            <div class="gItem"><img src="assets/images/photo-02.jpg" alt="Roofing photo 02" loading="lazy" /></div>
+            <div class="gItem"><img src="assets/images/photo-03.jpg" alt="Roofing photo 03" loading="lazy" /></div>
+            <div class="gItem"><img src="assets/images/photo-04.jpg" alt="Roofing photo 04" loading="lazy" /></div>
+            <div class="gItem"><img src="assets/images/photo-05.jpg" alt="Roofing photo 05" loading="lazy" /></div>
+            <div class="gItem"><img src="assets/images/photo-06.jpg" alt="Roofing photo 06" loading="lazy" /></div>
+            <div class="gItem"><img src="assets/images/photo-07.jpg" alt="Roofing photo 07" loading="lazy" /></div>
+            <div class="gItem"><img src="assets/images/photo-08.jpg" alt="Roofing photo 08" loading="lazy" /></div>
+            <div class="gItem"><img src="assets/images/photo-09.jpg" alt="Roofing photo 09" loading="lazy" /></div>
+            <div class="gItem"><img src="assets/images/photo-10.jpg" alt="Roofing photo 10" loading="lazy" /></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section aria-label="FAQ">
+    <!-- FAQ -->
+    <section id="faq" aria-label="FAQ">
       <div class="container">
         <div class="fade">
-          <h2 class="title">Quick Answers</h2>
-          <p class="lead">Clear expectations reduce friction and increase lead quality.</p>
+          <h2 class="title">FAQ</h2>
+          <p class="lead">Short answers that reduce hesitation and increase calls.</p>
 
           <div class="grid" style="gap:10px">
             <details>
-              <summary>Is $29.95/sq ft for granite or quartz?</summary>
-              <p>Pricing depends on material selection and project details (layout, edges, cutouts). We’ll confirm the best option for your budget during your quote.</p>
+              <summary>Do I need to call before I come?</summary>
+              <p>Yes — call/text to confirm <strong>today’s stock</strong> and <strong>deal pricing</strong>. It keeps your trip quick and smooth.</p>
             </details>
             <details>
-              <summary>How fast can you install?</summary>
-              <p>One-week installation is available on select projects depending on scheduling and material availability. Submit the quote form and we’ll give you the soonest options.</p>
+              <summary>Can you deliver?</summary>
+              <p>Yes — we deliver <strong>any product</strong>. Text your address/zip + the product and size for a fast delivery quote.</p>
             </details>
             <details>
-              <summary>Do you deliver and install?</summary>
-              <p>Yes—delivery and installation are available. We can also coordinate cabinets + counters for a smoother remodel.</p>
+              <summary>Where are you located?</summary>
+              <p><strong>Rubber Roof Liquidators</strong> — 5671 International Pkwy, New Hope, MN 55428. Mon–Sat 10–6. Call/Text: <a href="tel:+16123867172">612-386-7172</a>.</p>
             </details>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- QUOTE (HostGator PHP) -->
     <section id="quote">
       <div class="container">
         <div class="fade">
-          <h2 class="title">Get a Fast Quote</h2>
-          <p class="lead">Short form = more submissions. Upload photos for a more accurate estimate.</p>
+          <h2 class="title">Request a Quote (Pickup or Delivery)</h2>
+          <p class="lead">This form submits to your HostGator server (no “mailto” issues). Quickest response is still call/text.</p>
 
           <div class="quote">
             <div class="card">
-              <form name="Fast Quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" enctype="multipart/form-data">
-                <input type="hidden" name="form-name" value="Fast Quote">
-                <p class="sr-only"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
+              <!-- IMPORTANT: this posts to quote.php on HostGator -->
+              <form id="quoteForm" method="POST" action="quote.php" novalidate>
+                <!-- simple bot trap -->
+                <div class="sr-only">
+                  <label>Leave this field blank <input type="text" name="website" autocomplete="off"></label>
+                </div>
 
                 <div class="row">
                   <div class="field">
-                    <label for="need">Project</label>
-                    <select id="need" name="Project" required>
+                    <label for="project">Project Type</label>
+                    <select id="project" name="project_type" required>
                       <option value="" selected disabled>Select</option>
-                      <option>Countertops</option>
-                      <option>Cabinets</option>
-                      <option>Cabinets + Countertops</option>
+                      <option>Material Only (Pickup/Delivery)</option>
+                      <option>Flat Roof Repair</option>
+                      <option>EPDM Install</option>
+                      <option>T.P.O Install / Repair</option>
+                      <option>Not sure (need help)</option>
                     </select>
                   </div>
                   <div class="field">
-                    <label for="zip">City / Zip</label>
-                    <input id="zip" name="CityZip" placeholder="New Hope / 55428" required>
+                    <label for="need">What do you need?</label>
+                    <select id="need" name="product_interest" required>
+                      <option value="" selected disabled>Select</option>
+                      <option>Firestone EPDM 60 mil (10x100 / 10x50 / 10x25)</option>
+                      <option>Firestone Force with built in adhesive</option>
+                      <option>T.P.O White Rolls 10x100</option>
+                      <option>Firestone Glue</option>
+                      <option>Not listed (describe in notes)</option>
+                    </select>
                   </div>
                 </div>
 
                 <div class="row">
+                  <div class="field">
+                    <label for="size">Roof Size (approx)</label>
+                    <input id="size" name="roof_size" placeholder="Example: 10×20, 12×50, or sq ft" required>
+                  </div>
+                  <div class="field">
+                    <label for="surface">What is it on?</label>
+                    <select id="surface" name="surface_type" required>
+                      <option value="" selected disabled>Select</option>
+                      <option>Mobile home / manufactured</option>
+                      <option>Office / apartment / commercial</option>
+                      <option>Trailer / motorhome / RV</option>
+                      <option>Container / shop / garage / shed</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="field">
+                    <label for="fulfillment">Pickup or Delivery</label>
+                    <select id="fulfillment" name="fulfillment" required>
+                      <option value="" selected disabled>Select</option>
+                      <option value="Pickup (New Hope)">Pickup (New Hope)</option>
+                      <option value="Delivery">Delivery</option>
+                    </select>
+                  </div>
                   <div class="field">
                     <label for="timeline">Timeline</label>
-                    <select id="timeline" name="Timeline" required>
+                    <select id="timeline" name="timeline" required>
                       <option value="" selected disabled>Select</option>
-                      <option>ASAP</option>
-                      <option>1–3 weeks</option>
-                      <option>1–2 months</option>
-                      <option>Just planning</option>
-                    </select>
-                  </div>
-                  <div class="field">
-                    <label for="material">Material (if counters)</label>
-                    <select id="material" name="Material" required>
-                      <option value="" selected disabled>Select</option>
-                      <option>Granite</option>
-                      <option>Quartz</option>
-                      <option>Not sure</option>
+                      <option>Today / ASAP</option>
+                      <option>This week</option>
+                      <option>This month</option>
                     </select>
                   </div>
                 </div>
 
-                <div class="field">
-                  <label for="notes">Notes (optional)</label>
-                  <textarea id="notes" name="Notes" placeholder="Edge style, color preference, layout notes, sink cutout, etc…"></textarea>
+                <!-- Delivery fields (shown only when Delivery is chosen) -->
+                <div id="deliveryFields" class="hidden">
+                  <div class="row">
+                    <div class="field">
+                      <label for="address">Delivery Address</label>
+                      <input id="address" name="delivery_address" placeholder="Street address">
+                    </div>
+                    <div class="field">
+                      <label for="cityzip">City + ZIP</label>
+                      <input id="cityzip" name="delivery_city_zip" placeholder="Example: Minneapolis, 55411">
+                    </div>
+                  </div>
                 </div>
 
                 <div class="field">
-                  <label for="photos">Upload photos (optional)</label>
-                  <input id="photos" name="Photos" type="file" accept="image/*" multiple>
+                  <label for="notes">Notes</label>
+                  <textarea id="notes" name="notes" placeholder="Leak location, edges, penetrations, exact product request, delivery notes, etc."></textarea>
                 </div>
 
                 <div class="row">
                   <div class="field">
                     <label for="name">Name</label>
-                    <input id="name" name="Name" placeholder="Full name" required>
+                    <input id="name" name="name" placeholder="Full name" required>
                   </div>
                   <div class="field">
                     <label for="phone">Phone</label>
-                    <input id="phone" name="Phone" placeholder="(612) 386-7172" required>
+                    <input id="phone" name="phone" placeholder="(612) 386-7172" required>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="field">
+                    <label for="email">Email (optional)</label>
+                    <input id="email" name="email" placeholder="you@email.com">
+                  </div>
+                  <div class="field">
+                    <label for="preferred">Preferred Contact</label>
+                    <select id="preferred" name="preferred_contact" required>
+                      <option value="" selected disabled>Select</option>
+                      <option>Call me</option>
+                      <option>Text me</option>
+                      <option>Email me</option>
+                    </select>
                   </div>
                 </div>
 
                 <div class="formActions">
-                  <button class="btn primary" type="submit">Submit Quote Request</button>
+                  <button class="btn primary" type="submit">Send Request</button>
                   <a class="btn call" href="tel:+16123867172">Call Now</a>
                   <a class="btn ghost" href="sms:+16123867172">Text Us</a>
                 </div>
 
                 <p class="fine">
-                  Showroom: 5671 International Pkwy, New Hope, MN 55428 • We respect your privacy.
+                  Pickup: 5671 International Pkwy, New Hope, MN 55428 • Mon–Sat 10–6 • Delivery available • Call/Text to confirm stock.
                 </p>
               </form>
             </div>
 
             <aside class="card">
-              <h3 style="margin:0 0 6px;">Visit or Call</h3>
-              <p style="margin:0; color:var(--muted); line-height:1.65; font-weight:750;">
-                <strong>Affordable Cabinets &amp; Granite</strong><br/>
+              <h3 style="margin:0 0 6px;">Where to Get It</h3>
+              <p style="margin:0; color:var(--muted); line-height:1.65; font-weight:780;">
+                <strong>Rubber Roof Liquidators</strong><br/>
                 5671 International Pkwy, New Hope, MN 55428<br/>
-                <strong>Call:</strong> <a href="tel:+16123867172">612-386-7172</a>
+                <strong>Mon–Sat:</strong> 10:00–6:00<br/>
+                <strong>Call/Text:</strong> <a href="tel:+16123867172">612-386-7172</a><br/>
+                <strong>Delivery:</strong> available for any product
               </p>
 
               <div style="margin-top:12px; border-radius: var(--r24); overflow:hidden; border:1px solid rgba(255,255,255,.10);">
                 <iframe
-                  title="Map to Affordable Cabinets & Granite"
+                  title="Map to Rubber Roof Liquidators"
                   src="https://www.google.com/maps?q=5671%20International%20Pkwy,%20New%20Hope,%20MN%2055428&output=embed"
                   width="100%" height="280" style="border:0; display:block;"
                   loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
 
-              <p class="fine">
-                Tip: Add your Google reviews link + review count once confirmed.
-              </p>
+              <p class="fine">Tip: for delivery quotes, include address or at least city/zip.</p>
             </aside>
           </div>
 
@@ -792,33 +1020,20 @@
   <div class="mobilebar" role="navigation" aria-label="Quick actions">
     <a href="tel:+16123867172">Call</a>
     <a href="sms:+16123867172">Text</a>
-    <a href="#quote">Quote</a>
-  </div>
-
-  <!-- Lightbox -->
-  <div class="lb" id="lb" aria-hidden="true">
-    <div class="lbCard" role="dialog" aria-label="Image preview">
-      <button class="lbClose" id="lbClose" aria-label="Close">✕</button>
-      <img id="lbImg" alt="Expanded project photo" src="">
-    </div>
+    <a href="#deals">Deals</a>
   </div>
 
   <footer style="padding:18px 0 22px; border-top:1px solid rgba(255,255,255,.10); background: rgba(0,0,0,.12);">
     <div class="container" style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;">
-      <div style="color:var(--muted); font-weight:850;">
-        © <span id="year"></span> Affordable Cabinets &amp; Granite
-      </div>
-      <div style="color:var(--muted2); font-weight:850;">
-        Granite • Quartz • Cabinets • Fabrication • Install
-      </div>
+      <div style="color:var(--muted); font-weight:850;">© <span id="year"></span> Rubber Roof Liquidators</div>
+      <div style="color:var(--muted2); font-weight:850;">EPDM • T.P.O • Installs • Repairs • Delivery • New Hope, MN</div>
     </div>
   </footer>
 
   <script>
-    // year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // animation in
+    // fade-in on scroll
     if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches){
       const obs = new IntersectionObserver((entries)=>{
         entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
@@ -828,37 +1043,21 @@
       document.querySelectorAll('.fade').forEach(el=>el.classList.add('in'));
     }
 
-    // hero thumbs swap
-    const heroImg = document.getElementById('heroImg');
-    document.querySelectorAll('.thumb').forEach(t=>{
-      const src = t.getAttribute('data-src');
-      const go = ()=>{ heroImg.src = src; };
-      t.addEventListener('click', go);
-      t.addEventListener('keydown', (e)=>{ if(e.key === 'Enter' || e.key === ' ') go(); });
-    });
+    // delivery fields toggle
+    const fulfillment = document.getElementById('fulfillment');
+    const deliveryFields = document.getElementById('deliveryFields');
+    const address = document.getElementById('address');
+    const cityzip = document.getElementById('cityzip');
 
-    // lightbox
-    const lb = document.getElementById('lb');
-    const lbImg = document.getElementById('lbImg');
-    const lbClose = document.getElementById('lbClose');
-
-    function openLb(src){
-      lbImg.src = src;
-      lb.classList.add('in');
-      lb.setAttribute('aria-hidden','false');
+    function syncDeliveryFields(){
+      const isDelivery = fulfillment.value === 'Delivery';
+      deliveryFields.classList.toggle('hidden', !isDelivery);
+      // required only when Delivery is chosen
+      address.required = isDelivery;
+      cityzip.required = isDelivery;
     }
-    function closeLb(){
-      lb.classList.remove('in');
-      lb.setAttribute('aria-hidden','true');
-      lbImg.src = "";
-    }
-    lbClose.addEventListener('click', closeLb);
-    lb.addEventListener('click', (e)=>{ if(e.target === lb) closeLb(); });
-    document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeLb(); });
-
-    document.querySelectorAll('[data-src].shot').forEach(el=>{
-      el.addEventListener('click', ()=> openLb(el.getAttribute('data-src')));
-    });
+    fulfillment.addEventListener('change', syncDeliveryFields);
+    syncDeliveryFields();
   </script>
 </body>
 </html>
